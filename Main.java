@@ -4,15 +4,10 @@ public class Main {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter the account owner's name: ");
-    String ownerName = scanner.nextLine().trim();
-    while (ownerName.isEmpty()) {
-      System.out.print("Owner name cannot be blank. Enter the owner's name: ");
-      ownerName = scanner.nextLine().trim();
-    }
+    String ownerName = "Test0";
 
     BankAccount account = new SavingsAccount(ownerName);
-    System.out.println("Account created for " + ownerName + ".");
+    System.out.println("Welcome to BDO: " + ownerName);
 
     boolean running = true;
     while (running) {
@@ -72,6 +67,7 @@ public class Main {
     System.out.println("4. Freeze Account");
     System.out.println("5. Unfreeze Account");
     System.out.println("0. Exit");
+    System.out.println("");
     System.out.print("Choose an Option: ");
   }
 
